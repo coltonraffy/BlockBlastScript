@@ -689,10 +689,10 @@ def movePieceToBoard(Xcord, Ycord, pieceID, slot):
         Xto00 = 841
         Yto00 = 568
     elif (pieceID == 32):
-        Xto00 = 783
+        Xto00 = 780
         Yto00 = 624
     elif (pieceID == 33):
-        Xto00 = 783
+        Xto00 = 780
         Yto00 = 642
     elif (pieceID == 34):
         Xto00 = 859
@@ -720,7 +720,7 @@ def movePieceToBoard(Xcord, Ycord, pieceID, slot):
     # pyautogui.moveTo(Xto00 + (43 * slot), Yto00, duration=1)
     # pyautogui.moveRel(round((Xcord * 54)/1.43), round((Ycord * 54)/1.43), duration=1)
     # pyautogui.mouseUp(button='left')
-    pyautogui.dragTo(Xto00 + (43 * slot) + round((Xcord * 54)/1.43), Yto00 + round((Ycord * 54)/1.43), duration=1)
+    pyautogui.dragTo(Xto00 + (43 * slot) + round((Xcord * 55)/1.43), Yto00 + round((Ycord * 55)/1.43), duration=1)
 
 def findHappinessFactor():
     happinessFactor = 0
@@ -947,7 +947,7 @@ while (ColtonsCatIsCool):
                                     if (canPieceFit(testP3Xcord, testP3Ycord, pieceIDs[2])):
                                         updateTestBoard(testP3Xcord, testP3Ycord, pieceIDs[2])
                                         if (testBrokenRows > 0):
-                                            testHappinessFactor = 1000000000000 + findHappinessFactor() + 15 * testBrokenRows
+                                            testHappinessFactor = 1000000000000 + findHappinessFactor()
                                         else:
                                             testHappinessFactor = findHappinessFactor()
                                         if ((testHappinessFactor > bestHappinessFactor)):
@@ -1000,7 +1000,7 @@ while (ColtonsCatIsCool):
                                     if (canPieceFit(testP2Xcord, testP2Ycord, pieceIDs[1])):
                                         updateTestBoard(testP2Xcord, testP2Ycord, pieceIDs[1])
                                         if (testBrokenRows > 0):
-                                            testHappinessFactor = 1000000000000 + findHappinessFactor() + 15 * testBrokenRows
+                                            testHappinessFactor = 1000000000000 + findHappinessFactor()
                                         else:
                                             testHappinessFactor = findHappinessFactor()
                                         if ((testHappinessFactor > bestHappinessFactor)):
@@ -1053,7 +1053,7 @@ while (ColtonsCatIsCool):
                                     if (canPieceFit(testP3Xcord, testP3Ycord, pieceIDs[2])):
                                         updateTestBoard(testP3Xcord, testP3Ycord, pieceIDs[2])
                                         if (testBrokenRows > 0):
-                                            testHappinessFactor = 1000000000000 + findHappinessFactor() + 15 * testBrokenRows
+                                            testHappinessFactor = 1000000000000 + findHappinessFactor()
                                         else:
                                             testHappinessFactor = findHappinessFactor()
                                         if ((testHappinessFactor > bestHappinessFactor)):
@@ -1106,7 +1106,7 @@ while (ColtonsCatIsCool):
                                     if (canPieceFit(testP1Xcord, testP1Ycord, pieceIDs[0])):
                                         updateTestBoard(testP1Xcord, testP1Ycord, pieceIDs[0])
                                         if (testBrokenRows > 0):
-                                            testHappinessFactor = 1000000000000 + findHappinessFactor() + 15 * testBrokenRows
+                                            testHappinessFactor = 1000000000000 + findHappinessFactor()
                                         else:
                                             testHappinessFactor = findHappinessFactor()
                                         if ((testHappinessFactor > bestHappinessFactor)):
@@ -1159,7 +1159,7 @@ while (ColtonsCatIsCool):
                                     if (canPieceFit(testP2Xcord, testP2Ycord, pieceIDs[1])):
                                         updateTestBoard(testP2Xcord, testP2Ycord, pieceIDs[1])
                                         if (testBrokenRows > 0):
-                                            testHappinessFactor = 1000000000000 + findHappinessFactor() + 15 * testBrokenRows
+                                            testHappinessFactor = 1000000000000 + findHappinessFactor()
                                         else:
                                             testHappinessFactor = findHappinessFactor()
                                         if ((testHappinessFactor > bestHappinessFactor)):
@@ -1212,7 +1212,7 @@ while (ColtonsCatIsCool):
                                     if (canPieceFit(testP1Xcord, testP1Ycord, pieceIDs[0])):
                                         updateTestBoard(testP1Xcord, testP1Ycord, pieceIDs[0])
                                         if (testBrokenRows > 0):
-                                            testHappinessFactor = 1000000000000 + findHappinessFactor() + 15 * testBrokenRows
+                                            testHappinessFactor = 1000000000000 + findHappinessFactor()
                                         else:
                                             testHappinessFactor = findHappinessFactor()
                                         if ((testHappinessFactor > bestHappinessFactor)):
