@@ -1,0 +1,2 @@
+# BlockBlastScript
+Plays Block Blast.
