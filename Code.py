@@ -689,10 +689,10 @@ def movePieceToBoard(Xcord, Ycord, pieceID, slot):
         Xto00 = 841
         Yto00 = 568
     elif (pieceID == 32):
-        Xto00 = 778
+        Xto00 = 783
         Yto00 = 624
     elif (pieceID == 33):
-        Xto00 = 779
+        Xto00 = 783
         Yto00 = 642
     elif (pieceID == 34):
         Xto00 = 859
@@ -724,27 +724,27 @@ def movePieceToBoard(Xcord, Ycord, pieceID, slot):
 
 def findHappinessFactor():
     happinessFactor = 0
-    Ycord = 0
-    while (Ycord < 8):
-        Xcord = 0
-        while (Xcord < 8):
-            blockType = blockFilled(Xcord, Ycord)
+    YcordForLoop = 0
+    while (YcordForLoop < 8):
+        XcordForLoop = 0
+        while (XcordForLoop < 8):
+            blockType = blockFilled(XcordForLoop, YcordForLoop)
             sidesFilled = 0
-            if (XCord != 0):
-                if (blockFilled(XCord - 1, YCord) == blockType):
+            if (XcordForLoop != 0):
+                if (blockFilled(XcordForLoop - 1, YcordForLoop) == blockType):
                     sidesFilled += 1
-            elif (YCord != 0):
-                if (blockFilled(XCord, YCord - 1) == blockType):
+            elif (YcordForLoop != 0):
+                if (blockFilled(XcordForLoop, YcordForLoop - 1) == blockType):
                     sidesFilled += 1
-            elif (XCord != 7):
-                if (blockFilled(XCord + 1, YCord) == blockType):
+            elif (XcordForLoop != 7):
+                if (blockFilled(XcordForLoop + 1, YcordForLoop) == blockType):
                     sidesFilled += 1
-            elif (YCord != 7):
-                if (blockFilled(XCord, YCord + 1) == blockType):
+            elif (YcordForLoop != 7):
+                if (blockFilled(XcordForLoop, YcordForLoop + 1) == blockType):
                     sidesFilled += 1
             happinessFactor += sidesFilled - 2
-            Xcord += 1
-        Ycord += 1
+            XcordForLoop += 1
+        YcordForLoop += 1
     return happinessFactor
 
 
