@@ -147,7 +147,7 @@ def colorMatch(color1, color2, strictness='lax'):
     bdiff = abs(color1[2] - color2[2])
     total = rdiff + gdiff + bdiff
     if (strictness == 'lax'):
-        output = (total < 40)
+        output = (total < 30)
     elif (strictness == 'strict'):
         output = (total < 10)
     return output
@@ -778,8 +778,7 @@ while (ColtonsCatIsCool):
         pyautogui.click(button='left')
         pyautogui.moveTo(947, 424, duration=0.5)
         pyautogui.click(button='left')
-        pyautogui.moveTo(1136, 223, duration=0.5)
-        pyautogui.click(button='left')
+        time.sleep(0.5)
         bgPieceColor = list(pyautogui.pixel(960, 980))
 
     pyautogui.moveTo(200, 200,duration=0.2)
@@ -913,6 +912,11 @@ while (ColtonsCatIsCool):
 
         pieceNum += 1
 
+    # if (pieceIDs == [33, 33, 33]):
+    #     print(bgPieceColor)
+    #     print(pyautogui.pixel(left_pointForID33X + (0 * 143), pointForID33Y))
+    #     sys.exit("33 33 33")
+    
     bestBrokenRows = -1
     bestHappinessFactor = -100000000000
     bestOrder = 0
