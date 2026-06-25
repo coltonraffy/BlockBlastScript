@@ -6,7 +6,7 @@ game directly off the screen and controlling the mouse. It uses
 offered pieces) and to drag pieces onto the board.
 
 > **Note:** This is a screen-scraping bot driven entirely by hardcoded pixel coordinates calibrated
-> for one specific display setup. It is a personal/hobby project, not a general-purpose solver — see
+> for one specific display setup. It is a personal/hobby project, not a general-purpose solver (so far) — see
 > [Calibration](#calibration) and [Limitations](#limitations--known-issues) before running it.
 
 ## How it works
