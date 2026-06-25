@@ -45,7 +45,7 @@ The full mapping is the `if/elif` ladders in `updateTestBoard` and `canPieceFit`
 ## Requirements
 
 - **An android phone**
-- **[Scrcpy] (https://github.com/genymobile/scrcpy)**
+- **[Scrcpy](https://github.com/genymobile/scrcpy)**
 - **Python 3** 
 - **PyAutoGUI**
 
